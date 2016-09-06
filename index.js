@@ -36,7 +36,7 @@ module.exports = {
     var path = this.webfontPath();
     var options = merge(true, {
         css: true,
-        cssDest: 'temp/ember-cli-webfont.css'
+        cssDest: 'app/styles/ember-cli-webfont.css'
       }, this.options());
     var cssTree = webfont(path, options);
 
@@ -44,15 +44,12 @@ module.exports = {
       include: [new RegExp(/\.css$/)]
     });
 
-    // Nasty way to deal with an error when there is no SVG files in the specified path
-    // We merge with an empty CSS file so there isn't an error when we `app.import`
-    // But I can't find a path which doesn't change dependent on whether you are developing
-    // the addon or your app.
-    var dummyWatchDir = 'vendor/';
-    if (!this.isDevelopingAddon()) {
-      dummyWatchDir = 'node_modules/ember-cli-webfont/' + dummyWatchDir;
-    }
-    return mergeTrees([dummyWatchDir, cssTree], { overwrite: true });
+    let dummyCssTree = new Funnel('node_modules/ember-cli-webfont/temp/', {
+      files: ['ember-cli-webfont.css'],
+      destDir: 'app/styles'
+    });
+    
+    return mergeTrees([dummyCssTree, cssTree], { overwrite: true });
   },
 
   treeForPublic: function() {
