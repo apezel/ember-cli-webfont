@@ -44,11 +44,11 @@ module.exports = {
       include: [new RegExp(/\.css$/)]
     });
 
-    let dummyCssTree = new Funnel('node_modules/ember-cli-webfont/temp/', {
+    let dummyCssTree = new Funnel('node_modules/ember-cli-webfont/vendor/temp/', {
       files: ['ember-cli-webfont.css'],
       destDir: 'app/styles'
     });
-    
+
     return mergeTrees([dummyCssTree, cssTree], { overwrite: true });
   },
 
