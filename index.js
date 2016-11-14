@@ -61,6 +61,6 @@ module.exports = {
 
   included: function(app) {
     this._super.included(app);
-    app.import('temp/ember-cli-webfont.css');
+    //app.import('temp/ember-cli-webfont.css'); imported directly in app
   }
 };
