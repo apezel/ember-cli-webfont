@@ -19,7 +19,7 @@
   "license": "MIT",
   "devDependencies": {
     "broccoli-asset-rev": "^2.0.2",
-    "ember-cli": "0.2.7",
+    "ember-cli": "2.10.0",
     "ember-cli-app-version": "0.3.3",
     "ember-cli-content-security-policy": "0.4.0",
     "ember-cli-dependency-checker": "^1.0.0",
@@ -29,9 +29,9 @@
     "ember-cli-qunit": "0.3.13",
     "ember-cli-uglify": "^1.0.1",
     "ember-data": "1.13.4",
+    "ember-disable-prototype-extensions": "^1.0.0",
     "ember-disable-proxy-controllers": "^1.0.0",
     "ember-export-application-global": "^1.0.2",
-    "ember-disable-prototype-extensions": "^1.0.0",
     "ember-try": "0.0.6"
   },
   "keywords": [
@@ -42,13 +42,18 @@
     "icons"
   ],
   "dependencies": {
-    "broccoli-funnel": "^0.2.3",
+    "broccoli-funnel": "^2.0.0",
+    "broccoli-glob-caching-writer": "github:sunflowerdeath/broccoli-glob-caching-writer",
     "broccoli-merge-trees": "^0.2.1",
-    "broccoli-webfont": "^0.2.2",
-    "ember-cli-babel": "^5.0.0",
+    "broccoli-webfont": "file:local_modules/broccoli-webfont",
+    "ember-cli-babel": "^6.0.0",
     "merge": "^1.2.0"
   },
   "ember-addon": {
     "configPath": "tests/dummy/config"
+  },
+  "volta": {
+    "node": "6.17.1",
+    "npm": "6.14.18"
   }
 }
