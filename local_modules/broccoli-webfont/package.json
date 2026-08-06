@@ -1,0 +1,35 @@
+{
+  "author": {
+    "name": "sunflowerdeath"
+  },
+  "bugs": {
+    "url": "https://github.com/sunflowerdeath/broccoli-webfont/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "broccoli-glob-caching-writer": "https://github.com/apezel/broccoli-glob-caching-writer#master",
+    "q": "^1.1.2",
+    "underscore": "^1.7.0",
+    "webfonts-generator": "^0.2.0"
+  },
+  "deprecated": false,
+  "description": "Broccoli plugin that generates webfonts from SVG icons.",
+  "devDependencies": {
+    "broccoli": "^0.13.3"
+  },
+  "homepage": "https://github.com/sunflowerdeath/broccoli-webfont#readme",
+  "keywords": [
+    "broccoli-plugin"
+  ],
+  "license": "public domain",
+  "main": "index.js",
+  "name": "broccoli-webfont",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sunflowerdeath/broccoli-webfont.git"
+  },
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "version": "0.2.2"
+}
