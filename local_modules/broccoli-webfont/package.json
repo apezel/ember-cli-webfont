@@ -7,7 +7,7 @@
   },
   "bundleDependencies": false,
   "dependencies": {
-    "broccoli-glob-caching-writer": "sunflowerdeath/broccoli-glob-caching-writer#^0.2.0",
+    "broccoli-glob-caching-writer": "https://github.com/apezel/broccoli-glob-caching-writer#master",
     "q": "^1.1.2",
     "underscore": "^1.7.0",
     "webfonts-generator": "^0.2.0"
