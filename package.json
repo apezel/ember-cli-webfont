@@ -43,7 +43,7 @@
   ],
   "dependencies": {
     "broccoli-funnel": "^2.0.0",
-    "broccoli-glob-caching-writer": "https://github.com/apezel/broccoli-glob-caching-writer#matser",
+    "broccoli-glob-caching-writer": "https://github.com/apezel/broccoli-glob-caching-writer#master",
     "broccoli-merge-trees": "^0.2.1",
     "broccoli-webfont": "https://github.com/apezel/broccoli-webfont#master",
     "ember-cli-babel": "^6.0.0",
